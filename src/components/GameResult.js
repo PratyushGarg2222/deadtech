@@ -12,7 +12,7 @@ export default function GameResult({ score, totalRounds, onRestart }) {
   const percentage = Math.round((score / totalRounds) * 100);
   
   const getGrade = () => {
-    if (percentage >= 90) return { grade: 'A+', color: 'from-yellow-300 via-yellow-400 to-orange-500', emoji: '🏆' };
+    if (percentage >= 90) return { grade: 'A++', color: 'from-yellow-300 via-yellow-400 to-orange-500', emoji: '🏆' };
     if (percentage >= 80) return { grade: 'A', color: 'from-green-400 via-emerald-500 to-teal-600', emoji: '⭐' };
     if (percentage >= 70) return { grade: 'B', color: 'from-blue-400 via-blue-500 to-indigo-600', emoji: '✨' };
     if (percentage >= 60) return { grade: 'C', color: 'from-purple-400 via-purple-500 to-pink-600', emoji: '🎯' };
